@@ -1,0 +1,135 @@
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 16pt;
+}
+a.skip {
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+a.skip:focus {
+  top: 20px;
+  color: black;
+  text-decoration-style: solid;
+}
+*:focus {
+  border: 2px solid black;
+}
+header {
+  background: #3f7dce;
+  border-bottom: 4px solid #3f7dce;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+h1 {
+  font-size: 18pt;
+  padding: 10px;
+  color: white;
+  display: flex;
+  align-content: flex-start;
+}
+a:link {
+  color: white;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: black;
+  font-size: 22px;
+}
+#current_page a {
+  background-color: yellow;
+  padding: 3px;
+  border: 2px solid black;
+  color: black;
+}
+.nav_links {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-around;
+}
+nav li {
+  padding: 10px;
+}
+.main_bayou {
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 3px solid #3f7dce;
+}
+p {
+  padding: 10px;
+  text-align: center;
+}
+.outside_grid, .inside_grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+}
+figure {
+  border: 1px solid black;
+}
+.outside_grid img, .inside_grid img {
+  width: 100%;
+}
+figcaption {
+  font-size: 12pt;
+  padding: 4px;
+}
+.cat_photo {
+  width: 100%;
+}
+footer {
+  background-color: black;
+  color: white;
+  bottom: 0;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 850px) {
+  header {
+    background: #3f7dce;
+    border-bottom: 4px solid #3f7dce;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  h1 {
+    font-size: 18pt;
+    padding: 10px;
+    color: white;
+    display: flex;
+    align-content: flex-start;
+  }
+  .nav_links {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  nav li {
+    padding: 10px;
+  }
+  .main_bayou {
+    border: none;
+  }
+  footer {
+    position: fixed;
+  }
+}
