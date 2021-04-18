@@ -2,7 +2,7 @@ body {
   font-family: "Barlow", sans-serif;
   font-size: 16pt;
 }
-a.skip {
+.skip a{
   background: white;
   left: 0;
   padding: 6px;
@@ -12,7 +12,7 @@ a.skip {
   transition: top 1s ease-out;
   z-index: 1;
 }
-a.skip:focus {
+.skip a:focus {
   top: 20px;
   color: black;
   text-decoration-style: solid;
@@ -21,8 +21,8 @@ a.skip:focus {
   border: 2px solid black;
 }
 header {
-  background: #3f7dce;
-  border-bottom: 4px solid #3f7dce;
+  background: #265797;
+  border-bottom: 4px solid #265797;
   display: flex;
   flex-direction: column-reverse;
   align-items: flex-start;
@@ -103,8 +103,8 @@ footer {
 
 @media screen and (min-width: 750px) {
   header {
-    background: #3f7dce;
-    border-bottom: 4px solid #3f7dce;
+    background: #265797;
+    border-bottom: 4px solid #265797;
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-start;
